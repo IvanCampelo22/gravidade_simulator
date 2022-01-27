@@ -1,0 +1,23 @@
+<Objeto>
+    size: 50,50
+    canvas: 
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Principal>: 
+    orientation: 'horizontal'
+    padding: 20
+    Label: 
+        font_size: 70
+        center_x: root.width / 5
+        top: root.top - 50
+        text: "Ponto 1"
+    Label:
+        font_size: 70
+        center_x: root.width *3/4
+        top:root.top - 50
+        text:'ponto 2'
+    Objeto: 
+        center: self.parent.center
+   
